@@ -1,0 +1,23 @@
+{
+  "name": "feprojects",
+  "version": "1.0.0",
+  "description": "\"# FEProjects\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cochav4884/FEProjects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cochav4884/FEProjects/issues"
+  },
+  "homepage": "https://github.com/cochav4884/FEProjects#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
