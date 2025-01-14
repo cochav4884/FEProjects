@@ -30,7 +30,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <!-- Navigation Bar Links -->
           <li class="nav-item active">
@@ -50,15 +50,133 @@
               </button></a
             >
           </li>
-        
+          <!-- Navigation Bar Dropdown Box -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light btn btn-secondary"
+              type="button"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Looking for more boostrap?
+            </a>
+            <ul
+              class="dropdown-menu bg-secondary text-center p-1"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <!--   Navigation Bar Dropdown Box Links -->
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-info"
+                  href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  getbootstrap.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-primary"
+                  href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  Bootstrap 3, 4, 5
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-dark"
+                  href="https://www.w3schools.com/bootstrap5/bootstrap_tables.php"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  Bootstrap Tables
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-info"
+                  href="https://www.w3schools.com/bootstrap5/bootstrap_grid_system.php"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  Bootstrap Grid System
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-primary"
+                  href="https://www.w3schools.com/bootstrap5/bootstrap_navbar.php"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  Bootstrap Navbar
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-dark"
+                  href="https://www.w3schools.com/bootstrap5/bootstrap_dropdowns.php"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  Bootstrap Dropdowns
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-info"
+                  href="https://www.w3schools.com/bootstrap5/bootstrap_flex.php"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  Bootstrap Flex
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-primary"
+                  href="https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  Bootstrap Form Inputs
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item btn btn-secondary text-dark"
+                  href="https://www.w3schools.com/bootstrap/bootstrap_forms_inputs2.asp"
+                  target="_blank"
+                  rel="noopener"
+                  type="button"
+                >
+                  Bootstrap Form Inputs 2
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
-    <br><br>
+    <br /><br />
     <div class="container bg-primary my-3 p-2">
       <form action="/action_page.php">
         <div class="mb-3 mt-3">
-          <label for="email" class="form-label">Name:</label>
+          <label for="name" class="form-label">Name:</label>
           <input
             type="name"
             class="form-control"
@@ -68,7 +186,7 @@
           />
         </div>
         <div class="mb-3">
-          <label for="pwd" class="form-label">Email:</label>
+          <label for="email" class="form-label">Email:</label>
           <input
             type="email"
             class="form-control"
@@ -78,13 +196,13 @@
           />
         </div>
         <div class="mb-3">
-          <label for="pwd" class="form-label">Password:</label>
+          <label for="phonenumber" class="form-label">Phone Number:</label>
           <input
-            type="password"
+            type="phonenumber"
             class="form-control"
-            id="pwd"
-            placeholder="Enter password"
-            name="pswd"
+            id="phonenumber"
+            placeholder="Enter Phone Number"
+            name="phonenumber"
           />
         </div>
         <div class="form-check mb-3">
@@ -92,6 +210,47 @@
             <input class="form-check-input" type="checkbox" name="remember" />
             Remember me
           </label>
+          <div>
+            <label type="list"><h5>Select One</h5></label>
+          </div>
+          <div class="form-check bg-info">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="radio1"
+              name="optradio"
+              value="Arabica"
+              placeholder="Arabica"
+              checked
+            />
+            <label class="form-check-label" for="radio1">Arabica</label>
+          </div>
+          <div class="form-check bg-info">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="radio2"
+              name="optradio"
+              value="Robusta"
+              placeholder="Robusta"
+            />
+            <label class="form-check-label" for="radio2">Robusta</label>
+          </div>
+          <div class="form-check bg-info">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="radio3"
+              name="optradio"
+              value="subvarieties"
+              placeholder="Sub-Varieties"
+            />
+            <label class="form-check-label">Sub-Varieties</label>
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
         </div>
         <button type="submit" class="btn btn-secondary">Submit</button>
       </form>
@@ -102,10 +261,12 @@
       <div class="container-fluid my-5">
         <div class="row">
           <div class="col-sm-3 bg-primary border p-2">
-            <p class="text-center text-light">Form came from </p>
+            <p class="text-center text-light">Bootstrap Form</p>
           </div>
 
-          <div class="col-sm-6 border bg-info text-center p-2"><img src="images/w3.jpg.png" alt="w3schools" width="50px"></div>
+          <div class="col-sm-6 border bg-info text-center p-2">
+            <img src="images/w3.jpg.png" alt="w3schools" width="50px" />
+          </div>
 
           <div class="col-sm-3 border bg-secondary text-center p-2">
             <a
@@ -120,22 +281,21 @@
               </button></a
             >
             <a href="#top" class="float-end">
-              <button class="btn btn-primary" id="fbtn" type="button">Back to top</button>
+              <button class="btn btn-primary" id="fbtn" type="button">
+                Back to top
+              </button>
             </a>
           </div>
         </div>
       </div>
 
-
-
- <!-- <ul>
+      <!-- <ul>
       <li>Dark</li>
       <li>Medium</li>
       <li>Mild</li>
       <li>Decaf</li>
       <li>Expresso</li>
     </ul> -->
-
     </footer>
   </body>
 </html>
